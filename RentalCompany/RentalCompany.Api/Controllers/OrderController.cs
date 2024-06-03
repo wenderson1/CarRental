@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RentalCompany.Application.Interfaces;
+using RentalCompany.Application.Models.Input;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -29,15 +31,15 @@ namespace RentalCompany.Api.Controllers
         }
 
         /// <summary>
-        /// Get motorcycles availables for create a new order
+        /// Get cars availables for create a new order
         /// </summary>
-        /// <returns>Motorcycles list</returns>
+        /// <returns>cars list</returns>
         /// <response code="200">Succes</response>
         /// <response code="400">Bad Request</response>       
-        [HttpGet("motorcycles/available")]
-        public IActionResult GetAllMotorcyclesAvailable()
+        [HttpGet("cars/available")]
+        public IActionResult GetAllCarsAvailable()
         {
-            return Ok(_orderService.GetAllMotorcyclesAvailable());
+            return Ok(_orderService.GetAllCarsAvailable());
         }
 
         /// <summary>
@@ -73,27 +75,27 @@ namespace RentalCompany.Api.Controllers
         }
 
         /// <summary>
-        /// Get orders by deliveryManId
+        /// Get orders by customerId
         /// </summary>
-        /// <param name="deliveryManId">Id Motorcycle</param>
+        /// <param name="customerId">Id customer</param>
         /// <returns>Order List</returns>
         /// <response code="200">Succes</response>
-        [HttpGet("deliveryMan/{deliveryManId}")]
-        public async Task<IActionResult> GetByDeliveryManId(string deliveryManId)
+        [HttpGet("customer/{customerId}")]
+        public async Task<IActionResult> GetByCustomerId(string customerId)
         {
-            return Ok(await _orderService.GetByDeliveryManId(deliveryManId));
+            return Ok(await _orderService.GetByCustomerId(customerId));
         }
 
         /// <summary>
-        /// Get orders by motorcycleid
+        /// Get orders by carId
         /// </summary>
-        /// <param name="motorcycleId">Id Motorcycle</param>
+        /// <param name="carId">Id Car</param>
         /// <returns>Order List</returns>
         /// <response code="200">Succes</response>
-        [HttpGet("motorcycle/{motorcycleId}")]
-        public async Task<IActionResult> GetByMotorcycleId(string motorcycleId)
+        [HttpGet("car/{carId}")]
+        public async Task<IActionResult> GetByCarId(string carId)
         {
-            return Ok(await _orderService.GetByMotorcycleId(motorcycleId));
+            return Ok(await _orderService.GetByCarId(carId));
         }
 
     }

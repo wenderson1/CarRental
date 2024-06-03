@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using RentalCompany.Application.Interfaces;
+using RentalCompany.Application.Services;
+using RentalCompany.Application.Subscriber;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +14,14 @@ namespace RentalCompany.Application
     {
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            services.AddScoped<IDeliveryManService, DeliveryManService>();
+            services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IOrderService, OrderService>();
-            wwwwwwwf
+
             return services;
         }
         public static IServiceCollection AddSubscriber(this IServiceCollection services)
         {
-            services.AddHostedService<MotorcyclesAvailablesSubscriber>();
+            services.AddHostedService<CarsAvailablesSubscriber>();
             return services;
         }
 

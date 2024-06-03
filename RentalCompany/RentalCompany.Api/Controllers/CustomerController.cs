@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RentalCompany.Application.Interfaces;
+using RentalCompany.Application.Models.Input;
 
 namespace RentalCompany.Api.Controllers
 {
@@ -38,7 +40,7 @@ namespace RentalCompany.Api.Controllers
         /// <response code="200">Succes</response>
         /// <response code="400">Bad Request</response> 
         [HttpPut("{cnhNumber}")]
-        public async Task<IActionResult> Put([FromBody]  input, string cnhNumber)
+        public async Task<IActionResult> Put([FromBody] CustomerUpdateInput input, string cnhNumber)
         {
             var result = await _customerService.GetByCnhNumber(cnhNumber);
 
@@ -103,4 +105,4 @@ namespace RentalCompany.Api.Controllers
         }
     }
 }
-}
+

@@ -16,10 +16,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Interfaces\" />
-	  <Folder Include="Models\" />
-	  <Folder Include="Validators\" />
-	  <Folder Include="Subscriber\" />
-	  <Folder Include="Services\" />
+	  <ProjectReference Include="..\RentalCompany.Core\RentalCompany.Core.csproj" />
+	  <ProjectReference Include="..\RentalCompany.Infrastructure\RentalCompany.Infrastructure.csproj" />
 	</ItemGroup>
 </Project>
