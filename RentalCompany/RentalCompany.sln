@@ -3,21 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCompany.Api", "RentalCompany.Api\RentalCompany.Api.csproj", "{381AB936-6FE4-4B32-9CED-E1CAA6E4F6BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCompany.Api", "RentalCompany.Api\RentalCompany.Api.csproj", "{381AB936-6FE4-4B32-9CED-E1CAA6E4F6BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCompany.Core", "RentalCompany.Core\RentalCompany.Core.csproj", "{3AACE997-99D0-4AC4-9477-D2238E8030C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCompany.Core", "RentalCompany.Core\RentalCompany.Core.csproj", "{3AACE997-99D0-4AC4-9477-D2238E8030C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCompany.Application", "RentalCompany.Application\RentalCompany.Application.csproj", "{09EB58CC-D834-49F6-9518-E20D556D7F6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCompany.Application", "RentalCompany.Application\RentalCompany.Application.csproj", "{09EB58CC-D834-49F6-9518-E20D556D7F6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCompany.Infrastructure", "RentalCompany.Infrastructure\RentalCompany.Infrastructure.csproj", "{7379EB3B-CC8C-43EB-9512-0DA65B4BC9C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCompany.Infrastructure", "RentalCompany.Infrastructure\RentalCompany.Infrastructure.csproj", "{7379EB3B-CC8C-43EB-9512-0DA65B4BC9C6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E69AB2DB-19EB-4DB3-A62D-50934D515CEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{381AB936-6FE4-4B32-9CED-E1CAA6E4F6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,12 @@ Global
 		{7379EB3B-CC8C-43EB-9512-0DA65B4BC9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7379EB3B-CC8C-43EB-9512-0DA65B4BC9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7379EB3B-CC8C-43EB-9512-0DA65B4BC9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69AB2DB-19EB-4DB3-A62D-50934D515CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69AB2DB-19EB-4DB3-A62D-50934D515CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69AB2DB-19EB-4DB3-A62D-50934D515CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69AB2DB-19EB-4DB3-A62D-50934D515CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
