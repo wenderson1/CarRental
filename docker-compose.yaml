@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  user.api:
+  image: ${DOCKER_REGISTRY-}userapi
+  build:
+    context: .
+    dockerfile: User/User.Api/Dockerfile
+  rentalcompany.api:
+    image: ${DOCKER_REGISTRY-}rentalcompanyapi
+    build:
+      context: RentalCompany.Api
+      dockerfile: Dockerfile
+    

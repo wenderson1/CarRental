@@ -27,5 +27,4 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\RentalCompany.Application\RentalCompany.Application.csproj" />
 	</ItemGroup>
-
 </Project>
