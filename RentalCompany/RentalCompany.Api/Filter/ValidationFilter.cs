@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RentalCompany.Api.Filter
 {
-    public class ValidationFilter
+    public class ValidationFilter : IActionFilter
     {
         public void OnActionExecuted(ActionExecutedContext context) { }
 

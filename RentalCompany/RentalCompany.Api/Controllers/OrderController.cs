@@ -4,7 +4,7 @@ using RentalCompany.Application.Models.Input;
 
 namespace RentalCompany.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/order")]
     [ApiController]
     public class OrderController : ControllerBase
     {

@@ -5,7 +5,7 @@ using RentalCompany.Application.Models.Input;
 namespace RentalCompany.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/customer")]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _customerService;
